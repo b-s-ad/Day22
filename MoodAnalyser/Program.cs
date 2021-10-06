@@ -2,7 +2,7 @@
 using System.Text;
 using System.Collections.Generic;
 
-namespace MoodAnalyser // UC 1 // TC 1.2
+namespace MoodAnalyser // UC 1 // Refactor
 {
     public class Program
     {

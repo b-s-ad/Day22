@@ -2,12 +2,13 @@
 
 using System.Text;
 
-namespace MoodAnalyser  // UC 1 // TC 1.2
+namespace MoodAnalyser  // UC 1 // Refactor
 {
     public class MoodAnalyser
     {
         private string message;
-
+        public MoodAnalyser()
+        { }
         public MoodAnalyser(string messgage)
         {
             this.message = messgage;
@@ -17,8 +18,9 @@ namespace MoodAnalyser  // UC 1 // TC 1.2
         public string AnalyseMood()
         {
             if (this.message.Contains("Sad"))
+            {
                 return "SAD";
-            else
+            } else
             {
                 return "HAPPY";
 
