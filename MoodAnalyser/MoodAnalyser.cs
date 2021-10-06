@@ -2,7 +2,7 @@
 
 using System.Text;
 
-namespace MoodAnalyser  // UC 1 // TC 1.1
+namespace MoodAnalyser  // UC 1 // TC 1.2
 {
     public class MoodAnalyser
     {
