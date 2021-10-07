@@ -3,7 +3,7 @@ using MoodAnalyser;
 using System;
 
 
-namespace MoodAnalyser // UC 1 // Refactor
+namespace MoodAnalyser // UC 1 // Refactor 1.1 SAD
 {
     [TestClass]
     public class UnitTest1
@@ -23,7 +23,7 @@ namespace MoodAnalyser // UC 1 // Refactor
 
         }
 
-        [TestMethod] // HAPPY
+        /*[TestMethod] // HAPPY
 
         public void UC1_GivenHappyMoodShouldReturnHAPPY()
         {
@@ -40,6 +40,6 @@ namespace MoodAnalyser // UC 1 // Refactor
 
 
 
-        }
+        }*/
     }
 }
