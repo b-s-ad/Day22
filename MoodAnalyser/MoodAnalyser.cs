@@ -2,7 +2,7 @@
 
 using System.Text;
 
-namespace MoodAnalyser  // UC 1 // Refactor 1.2 HAPPY
+namespace MoodAnalyser  // UC 2.1
 {
     public class MoodAnalyser
     {
@@ -17,16 +17,26 @@ namespace MoodAnalyser  // UC 1 // Refactor 1.2 HAPPY
 
         public string AnalyseMood()
         {
-            if (this.message.Contains("Sad"))
+            try
             {
-                return "SAD";
-            } else
+                if (this.message.Contains("Sad"))
+                {
+                    return "SAD";
+                }
+                else
+                {
+                    return "HAPPY";
+                }
+            }
+            catch
             {
-                return "HAPPY";
+                    return "HAPPY";
 
+                }
+        
             }
 
         }
 
     }
-}
+
