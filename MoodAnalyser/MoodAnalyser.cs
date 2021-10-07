@@ -2,7 +2,7 @@
 
 using System.Text;
 
-namespace MoodAnalyser  // UC 1 // Refactor 1.1 SAD
+namespace MoodAnalyser  // UC 1 // Refactor 1.2 HAPPY
 {
     public class MoodAnalyser
     {

@@ -3,12 +3,12 @@ using MoodAnalyser;
 using System;
 
 
-namespace MoodAnalyser // UC 1 // Refactor 1.1 SAD
+namespace MoodAnalyser // UC 1 // Refactor 1.2 HAPPY
 {
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod] // SAD
+        /*[TestMethod] // SAD
         public void UC1_GivenSadMoodShouldReturnSAD()
         {
             //Arrange
@@ -21,14 +21,14 @@ namespace MoodAnalyser // UC 1 // Refactor 1.1 SAD
             //Assert
             Assert.AreEqual("SAD", mood);
 
-        }
+        }*/
 
-        /*[TestMethod] // HAPPY
+        [TestMethod] // HAPPY
 
         public void UC1_GivenHappyMoodShouldReturnHAPPY()
         {
             //Arrange
-           
+
             MoodAnalyser moodanalyse = new MoodAnalyser(" I am in Happy Mood ");
 
             //Act
@@ -40,6 +40,7 @@ namespace MoodAnalyser // UC 1 // Refactor 1.1 SAD
 
 
 
-        }*/
+        }
     }
+
 }
