@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace MoodAnalyser // 3.2 Empty // Enum
+namespace MoodAnalyser // UC 4 MoodAnalyserFactory
 {
     public class MoodAnalyserCustomException : Exception
     {

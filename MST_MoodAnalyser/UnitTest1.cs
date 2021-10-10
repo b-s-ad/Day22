@@ -4,38 +4,49 @@ using MoodAnalyser;
 using System;
 
 
-namespace MoodAnalyser  // 3.2 Empty 
+namespace MoodAnalyser  // UC 4 MoodAnalyserFactory
 {
     [TestClass]
     public class UnitTest1
     {
 
-       
 /*
-[TestMethod] // Null 3.1
-        
-        public void Given_Null_Mood_Should_Throw_MoodAnalysisException()
-         {
-                try
-                {
-                    //Arrange
-                    string message = null;
-                    MoodAnalyser moodAnalyse = new MoodAnalyser(message);
-                    //Act    
-                    string mood = moodAnalyse.AnalyseMood();    
-            }
-
-                //Assert
-                catch (MoodAnalyserCustomException e)
-                {
-                    Assert.AreNotEqual("Mood Should not be null", e.Message);
-                }
-            }
-
+        [TestMethod]  // UC 4.1
+                        public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject_UsingParameterizedConstructor()
+                        {
+                        object expected = new MoodAnalyser("HAPPY");
+                        object obj = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser.MoodAnalyser", "MoodAnalyser", "SAD");
+                        expected.Equals(obj);
+                        }
 */
 
 
-[TestMethod] // Empty 3.2
+
+        /*
+        [TestMethod] // Null 3.1
+
+                public void Given_Null_Mood_Should_Throw_MoodAnalysisException()
+                 {
+                        try
+                        {
+                            //Arrange
+                            string message = null;
+                            MoodAnalyser moodAnalyse = new MoodAnalyser(message);
+                            //Act    
+                            string mood = moodAnalyse.AnalyseMood();    
+                    }
+
+                        //Assert
+                        catch (MoodAnalyserCustomException e)
+                        {
+                            Assert.AreNotEqual("Mood Should not be null", e.Message);
+                        }
+                    }
+
+        */
+
+/*
+        [TestMethod] // Empty 3.2
         
         public void Given_Empty_Mood_Should_Throw_MoodAnalysisException_Indicating_EmptyMood()
         {
@@ -56,7 +67,7 @@ namespace MoodAnalyser  // 3.2 Empty
         }
 
 
-
+*/
 
     }
 }
