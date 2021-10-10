@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Demo\\.nuget\\packages\\": {}
+    "C:\\Users\\Userr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Demo\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj",
+      "projectUniqueName": "D:\\D\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj",
       "projectName": "MoodAnalyser",
-      "projectPath": "C:\\Users\\Demo\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj",
-      "packagesPath": "C:\\Users\\Demo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Demo\\Desktop\\te\\MoodAnalyser\\obj\\",
+      "projectPath": "D:\\D\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj",
+      "packagesPath": "C:\\Users\\Userr\\.nuget\\packages\\",
+      "outputPath": "D:\\D\\Desktop\\te\\MoodAnalyser\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Demo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Userr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

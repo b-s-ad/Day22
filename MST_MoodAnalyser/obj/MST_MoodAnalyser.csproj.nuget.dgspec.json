@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Demo\\Desktop\\te\\MST_MoodAnalyser\\MST_MoodAnalyser.csproj": {}
+    "D:\\D\\Desktop\\te\\MST_MoodAnalyser\\MST_MoodAnalyser.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Demo\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj": {
+    "D:\\D\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Demo\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj",
+        "projectUniqueName": "D:\\D\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj",
         "projectName": "MoodAnalyser",
-        "projectPath": "C:\\Users\\Demo\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj",
-        "packagesPath": "C:\\Users\\Demo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Demo\\Desktop\\te\\MoodAnalyser\\obj\\",
+        "projectPath": "D:\\D\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj",
+        "packagesPath": "C:\\Users\\Userr\\.nuget\\packages\\",
+        "outputPath": "D:\\D\\Desktop\\te\\MoodAnalyser\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Demo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Userr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,17 +58,17 @@
         }
       }
     },
-    "C:\\Users\\Demo\\Desktop\\te\\MST_MoodAnalyser\\MST_MoodAnalyser.csproj": {
+    "D:\\D\\Desktop\\te\\MST_MoodAnalyser\\MST_MoodAnalyser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Demo\\Desktop\\te\\MST_MoodAnalyser\\MST_MoodAnalyser.csproj",
+        "projectUniqueName": "D:\\D\\Desktop\\te\\MST_MoodAnalyser\\MST_MoodAnalyser.csproj",
         "projectName": "MST_MoodAnalyser",
-        "projectPath": "C:\\Users\\Demo\\Desktop\\te\\MST_MoodAnalyser\\MST_MoodAnalyser.csproj",
-        "packagesPath": "C:\\Users\\Demo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Demo\\Desktop\\te\\MST_MoodAnalyser\\obj\\",
+        "projectPath": "D:\\D\\Desktop\\te\\MST_MoodAnalyser\\MST_MoodAnalyser.csproj",
+        "packagesPath": "C:\\Users\\Userr\\.nuget\\packages\\",
+        "outputPath": "D:\\D\\Desktop\\te\\MST_MoodAnalyser\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Demo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Userr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Demo\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj": {
-                "projectPath": "C:\\Users\\Demo\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj"
+              "D:\\D\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj": {
+                "projectPath": "D:\\D\\Desktop\\te\\MoodAnalyser\\MoodAnalyser.csproj"
               }
             }
           }

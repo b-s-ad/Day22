@@ -4,6 +4,7 @@ C:\Users\Demo\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.runti
 C:\Users\Demo\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.runtimeconfig.dev.json
 C:\Users\Demo\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.dll
 C:\Users\Demo\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.pdb
+C:\Users\Demo\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.csproj.AssemblyReference.cache
 C:\Users\Demo\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Demo\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.AssemblyInfoInputs.cache
 C:\Users\Demo\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.AssemblyInfo.cs
@@ -11,3 +12,16 @@ C:\Users\Demo\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.cspro
 C:\Users\Demo\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.dll
 C:\Users\Demo\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.pdb
 C:\Users\Demo\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.genruntimeconfig.cache
+D:\D\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.exe
+D:\D\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.deps.json
+D:\D\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.runtimeconfig.json
+D:\D\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.runtimeconfig.dev.json
+D:\D\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.dll
+D:\D\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.pdb
+D:\D\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.GeneratedMSBuildEditorConfig.editorconfig
+D:\D\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.AssemblyInfoInputs.cache
+D:\D\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.AssemblyInfo.cs
+D:\D\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.csproj.CoreCompileInputs.cache
+D:\D\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.dll
+D:\D\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.pdb
+D:\D\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.genruntimeconfig.cache

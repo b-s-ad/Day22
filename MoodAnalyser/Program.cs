@@ -2,7 +2,7 @@
 using System.Text;
 using System.Collections.Generic;
 
-namespace MoodAnalyser // UC 2.1
+namespace MoodAnalyser   // 3.1 Null // 3.2 Empty
 {
     public class Program
     {

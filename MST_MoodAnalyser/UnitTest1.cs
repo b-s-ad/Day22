@@ -1,32 +1,63 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MoodAnalyser;
+
 using System;
 
 
-namespace MoodAnalyser // UC 2.1
+namespace MoodAnalyser  // 3.1 Null // 3.2 Empty
 {
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod] // HAPPY
-        [DataRow(null)]
-        public void UC2_GivenHappyMoodShouldReturnHAPPY(string message)
+
+       
+
+[TestMethod] // Null 3.1
+        
+        public void Given_Null_Mood_Should_Throw_MoodAnalysisException()
+         {
+                try
+                {
+                    //Arrange
+                    string message = null;
+                    MoodAnalyser moodAnalyse = new MoodAnalyser(message);
+                    //Act    
+                    string mood = moodAnalyse.AnalyseMood();    
+            }
+
+                //Assert
+                catch (MoodAnalyserCustomException e)
+                {
+                    Assert.AreNotEqual("Mood Should not be null", e.Message);
+                }
+            }
+
+
+
+
+[TestMethod] // Empty 3.2
+        
+        public void Given_Empty_Mood_Should_Throw_MoodAnalysisException_Indicating_EmptyMood()
         {
-
-            //Arrange
-            string expected = "HAPPY";
-            MoodAnalyser moodanalyse = new MoodAnalyser(message);
-
-            //Act
-            string mood = moodanalyse.AnalyseMood();
+            try
+            {
+                //Arrange
+                string message = "";
+                MoodAnalyser moodAnalyse = new MoodAnalyser(message);
+                //Act    
+                string mood = moodAnalyse.AnalyseMood();
+            }
 
             //Assert
-            Assert.AreEqual(expected, mood);
-
-
-
-
+            catch (MoodAnalyserCustomException e)
+            {
+                Assert.AreNotEqual("Mood Should not be Empty", e.Message);
+            }
         }
-    }
 
+
+
+
+    }
 }
+

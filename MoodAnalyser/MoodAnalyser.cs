@@ -1,8 +1,8 @@
 ﻿using System;
-
 using System.Text;
+using System.Collections.Generic;
 
-namespace MoodAnalyser  // UC 2.1
+namespace MoodAnalyser  // 3.1 Null // 3.2 Empty
 {
     public class MoodAnalyser
     {
@@ -19,7 +19,12 @@ namespace MoodAnalyser  // UC 2.1
         {
             try
             {
-                if (this.message.Contains("Sad"))
+                if (this.message.Equals(string.Empty))
+                {
+                    throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.EMPTY_MESSAGE, "Mood should not be Empty");
+                }
+
+                if (this.message.Contains("sad"))
                 {
                     return "SAD";
                 }
@@ -27,14 +32,13 @@ namespace MoodAnalyser  // UC 2.1
                 {
                     return "HAPPY";
                 }
-            }
-            catch
+            }  
+            catch (NullReferenceException)
             {
-                    return "HAPPY";
-
-                }
-        
+                throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.NULL_MESSAGE, "Mood should not be null");
             }
+
+        }
 
         }
 
