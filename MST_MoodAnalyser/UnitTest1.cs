@@ -4,14 +4,14 @@ using MoodAnalyser;
 using System;
 
 
-namespace MoodAnalyser  // 3.1 Null 
+namespace MoodAnalyser  // 3.2 Empty 
 {
     [TestClass]
     public class UnitTest1
     {
 
        
-
+/*
 [TestMethod] // Null 3.1
         
         public void Given_Null_Mood_Should_Throw_MoodAnalysisException()
@@ -32,9 +32,9 @@ namespace MoodAnalyser  // 3.1 Null
                 }
             }
 
+*/
 
 
-/*
 [TestMethod] // Empty 3.2
         
         public void Given_Empty_Mood_Should_Throw_MoodAnalysisException_Indicating_EmptyMood()
@@ -55,7 +55,7 @@ namespace MoodAnalyser  // 3.1 Null
             }
         }
 
-*/
+
 
 
     }
