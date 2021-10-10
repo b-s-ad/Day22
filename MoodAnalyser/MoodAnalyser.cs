@@ -2,7 +2,7 @@
 using System.Text;
 using System.Collections.Generic;
 
-namespace MoodAnalyser  // UC 4 MoodAnalyserFactory
+namespace MoodAnalyser  // 4.1
 {
     public class MoodAnalyser
     {

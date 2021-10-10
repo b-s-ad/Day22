@@ -4,13 +4,13 @@ using MoodAnalyser;
 using System;
 
 
-namespace MoodAnalyser  // UC 4 MoodAnalyserFactory
+namespace MoodAnalyser  // 4.1
 {
     [TestClass]
     public class UnitTest1
     {
 
-/*
+
         [TestMethod]  // UC 4.1
                         public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject_UsingParameterizedConstructor()
                         {
@@ -18,7 +18,7 @@ namespace MoodAnalyser  // UC 4 MoodAnalyserFactory
                         object obj = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser.MoodAnalyser", "MoodAnalyser", "SAD");
                         expected.Equals(obj);
                         }
-*/
+
 
 
 

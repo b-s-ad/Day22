@@ -4,7 +4,7 @@ using System.Text;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-namespace MoodAnalyser // UC 4  MoodAnalyserFactory
+namespace MoodAnalyser       // 4.1
 {
     public class MoodAnalyserFactory
     {
@@ -41,7 +41,7 @@ namespace MoodAnalyser // UC 4  MoodAnalyserFactory
                 throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.NO_SUCH_METHOD, "Constructor is not found");
             }
         }
-/*
+
         //below code is UC-5
         public static object CreateMoodAnalyseUsingParameterizedConstructor(string className, string constructorName, string message)
         {
@@ -64,7 +64,7 @@ namespace MoodAnalyser // UC 4  MoodAnalyserFactory
                 throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.NO_SUCH_CLASS, "Class not found");
 
             }
-        }*/
+        }
     }
 
 }
