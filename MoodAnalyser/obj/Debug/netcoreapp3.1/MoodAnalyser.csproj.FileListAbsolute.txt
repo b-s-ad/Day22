@@ -18,6 +18,7 @@ D:\D\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.runtimeconfig.
 D:\D\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.runtimeconfig.dev.json
 D:\D\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.dll
 D:\D\Desktop\te\MoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.pdb
+D:\D\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.csproj.AssemblyReference.cache
 D:\D\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.GeneratedMSBuildEditorConfig.editorconfig
 D:\D\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.AssemblyInfoInputs.cache
 D:\D\Desktop\te\MoodAnalyser\obj\Debug\netcoreapp3.1\MoodAnalyser.AssemblyInfo.cs
