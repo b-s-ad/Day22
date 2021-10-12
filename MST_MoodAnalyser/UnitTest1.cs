@@ -4,26 +4,25 @@ using MoodAnalyser;
 using System;
 
 
-namespace MoodAnalyser   // 4.2
+namespace MoodAnalyser   // 4.3
 {
 
     [TestClass] 
     public class UnitTest1
-    {
+    { 
+        [TestMethod] //4.3  Given Improper Construtor Should throw MoodAnalyseCustomException // AreEqual
 
-
-        [TestMethod] //4.2  GivenMoodAnalyseClassName_Should_Throw_MoodAnalyseObject
-        public void GivenMoodAnalyseClassName_Should_Throw_MoodAnalyseCustomException()
+        public void Given_Improper_Construtor_Should_Throw_MoodAnalyseCustomException()
         {
 
-            string expected = "Class Not Found";
+            string expected = "Construtor is Not Found";
             try
             {
 
-            //    object MoodAnalyseOnObject = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.MoodAnalyser", "MoodAnalyser"); //Know Class
-                object MoodAnalyseOnObjectt = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.DemoClass", "DemoClass"); //UNknow Class
+                 
+                object MoodAnalyseOnObjectt = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.DemoClass", "MoodAnalyser"); //UNknow Class
             }
-             
+
             catch (MoodAnalyserCustomException exception)
             {
                 Assert.AreEqual(expected, exception.Message);
@@ -31,28 +30,74 @@ namespace MoodAnalyser   // 4.2
         }
 
 
-        [TestMethod] //4.2  GivenMoodAnalyseClassName_Should_Throw_MoodAnalyseObject
-        public void GivenMoodAnalyseClassName_Should_Throw_MoodAnalyseCustomExceptions()
+
+        [TestMethod] //4.3  Given Improper Construtor Should throw MoodAnalyseCustomException
+
+        public void Given_Improper_Construtor_Should_Throw_MoodAnalyseCustomExceptions() // AreNotEqual
         {
 
-            string expected = "Class Not Found";
+            string expected = "Construtor is Not Found";
             try
             {
 
-                //object MoodAnalyseOnObject = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.MoodAnalyser", "MoodAnalyser");
-                object MoodAnalyseOnObject = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.DemoClass", "DemoClass");
+
+                object MoodAnalyseOnObjectt = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.DemoClass", "MoodAnalyser"); //UNknow Class
             }
 
             catch (MoodAnalyserCustomException exception)
             {
-                //Assert.AreEqual(expected, exception.Message); //AreEqual
-                Assert.AreNotEqual(expected, exception.Message); //AreNotEqual
+                Assert.AreNotEqual(expected, exception.Message);
             }
         }
 
 
 
 
+
+
+
+        /*
+                [TestMethod] //4.2  GivenMoodAnalyseClassName_Should_Throw_MoodAnalyseObject
+                public void GivenMoodAnalyseClassName_Should_Throw_MoodAnalyseCustomException()
+                {
+
+                    string expected = "Class Not Found";
+                    try
+                    {
+
+                    //    object MoodAnalyseOnObject = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.MoodAnalyser", "MoodAnalyser"); //Know Class
+                        object MoodAnalyseOnObjectt = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.DemoClass", "DemoClass"); //UNknow Class
+                    }
+
+                    catch (MoodAnalyserCustomException exception)
+                    {
+                        Assert.AreEqual(expected, exception.Message);
+                    }
+                }
+
+
+                [TestMethod] //4.2  GivenMoodAnalyseClassName_Should_Throw_MoodAnalyseObject
+                public void GivenMoodAnalyseClassName_Should_Throw_MoodAnalyseCustomExceptions()
+                {
+
+                    string expected = "Class Not Found";
+                    try
+                    {
+
+                        //object MoodAnalyseOnObject = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.MoodAnalyser", "MoodAnalyser");
+                        object MoodAnalyseOnObject = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.DemoClass", "DemoClass");
+                    }
+
+                    catch (MoodAnalyserCustomException exception)
+                    {
+                        //Assert.AreEqual(expected, exception.Message); //AreEqual
+                        Assert.AreNotEqual(expected, exception.Message); //AreNotEqual
+                    }
+                }
+
+
+
+        */
         /*
                 [TestMethod] // 4.1
                 public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject()
