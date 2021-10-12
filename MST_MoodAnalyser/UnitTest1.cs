@@ -4,69 +4,53 @@ using MoodAnalyser;
 using System;
 
 
-namespace MoodAnalyser   // 5.1
+namespace MoodAnalyser   // 4.3
 {
 
     [TestClass] 
     public class UnitTest1
-    {
+    { 
+        [TestMethod] //4.3  Given Improper Construtor Should throw MoodAnalyseCustomException // AreEqual
 
-
-        [TestMethod] // 5.1 GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject
-
-        public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject_UsingParameterizedConstructor()
+        public void Given_Improper_Construtor_Should_Throw_MoodAnalyseCustomException()
         {
-            object expected = new MoodAnalyser("HAPPY");
-            object obj = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser.MoodAnalyser", "MoodAnalyser", "HAPPY");
-            expected.Equals(obj);
 
+            string expected = "Construtor is Not Found";
+            try
+            {
+
+                 
+                object MoodAnalyseOnObjectt = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.DemoClass", "MoodAnalyser"); //UNknow Class
+            }
+
+            catch (MoodAnalyserCustomException exception)
+            {
+                Assert.AreEqual(expected, exception.Message);
+            }
         }
 
 
 
+        [TestMethod] //4.3  Given Improper Construtor Should throw MoodAnalyseCustomException
+
+        public void Given_Improper_Construtor_Should_Throw_MoodAnalyseCustomExceptions() // AreNotEqual
+        {
+
+            string expected = "Construtor is Not Found";
+            try
+            {
 
 
-        /* [TestMethod] //4.3  Given Improper Construtor Should throw MoodAnalyseCustomException // AreEqual
+                object MoodAnalyseOnObjectt = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.DemoClass", "MoodAnalyser"); //UNknow Class
+            }
 
-         public void Given_Improper_Construtor_Should_Throw_MoodAnalyseCustomException()
-         {
-
-             string expected = "Construtor is Not Found";
-             try
-             {
-
-
-                 object MoodAnalyseOnObjectt = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.DemoClass", "MoodAnalyser"); //UNknow Class
-             }
-
-             catch (MoodAnalyserCustomException exception)
-             {
-                 Assert.AreEqual(expected, exception.Message);
-             }
-         }
+            catch (MoodAnalyserCustomException exception)
+            {
+                Assert.AreNotEqual(expected, exception.Message);
+            }
+        }
 
 
-
-         [TestMethod] //4.3  Given Improper Construtor Should throw MoodAnalyseCustomException
-
-         public void Given_Improper_Construtor_Should_Throw_MoodAnalyseCustomExceptions() // AreNotEqual
-         {
-
-             string expected = "Construtor is Not Found";
-             try
-             {
-
-
-                 object MoodAnalyseOnObjectt = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyser.DemoClass", "MoodAnalyser"); //UNknow Class
-             }
-
-             catch (MoodAnalyserCustomException exception)
-             {
-                 Assert.AreNotEqual(expected, exception.Message);
-             }
-         }
-
- */
 
 
 
