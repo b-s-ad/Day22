@@ -2,7 +2,7 @@
 using System.Text;
 using System.Collections.Generic;
 
-namespace MoodAnalyser   // 5.1
+namespace MoodAnalyser   // 5.2
 { 
     public class MoodAnalyser
     {

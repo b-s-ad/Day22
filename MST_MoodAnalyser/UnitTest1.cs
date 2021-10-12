@@ -4,24 +4,65 @@ using MoodAnalyser;
 using System;
 
 
-namespace MoodAnalyser   // 5.1
+namespace MoodAnalyser   // 5.2
 {
 
     [TestClass] 
-    public class UnitTest1
+    public class UnitTest1   
     {
-
-
-        [TestMethod] // 5.1 GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject
-
-        public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject_UsingParameterizedConstructor()
+        [TestMethod]   //5.2 Given_Improper_ClassName_Should throw MoodAnalyseException   //AreEqual
+        public void Given_Improper_ClassName_Should_Throw_MoodAnalyserCustomException()
         {
-            object expected = new MoodAnalyser("HAPPY");
-            object obj = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser.MoodAnalyser", "MoodAnalyser", "HAPPY");
-            expected.Equals(obj);
 
+            string expected = "Class Not Found";
+            try
+            {
+
+
+                object MoodAnalyseOnObjectt = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser.DemoClass", "MoodAnalyser", "HAPPY"); //UNknow Class
+            }
+
+            catch (MoodAnalyserCustomException exception)
+            {
+                Assert.AreEqual(expected, exception.Message); //AreEqual
+            }
         }
 
+
+
+        [TestMethod]   //5.2 Given_Improper_ClassName_Should throw MoodAnalyseException              //AreNotEqual
+        public void Given_Improper_ClassName_Should_Throw_MoodAnalyserCustomExceptions()
+        {
+
+            string expected = "Class Not Found";
+            try
+            {
+
+
+                object MoodAnalyseOnObjectt = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser.DemoClass", "MoodAnalyser", "HAPPY"); //UNknow Class
+            }
+
+            catch (MoodAnalyserCustomException exception)
+            {
+                Assert.AreNotEqual(expected, exception.Message);  //AreNotEqual
+            }
+        }
+
+
+
+
+
+        /*
+                [TestMethod] // 5.1 GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject
+
+                public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject_UsingParameterizedConstructor()
+                {
+                    object expected = new MoodAnalyser("HAPPY");
+                    object obj = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser.MoodAnalyser", "MoodAnalyser", "HAPPY");
+                    expected.Equals(obj);
+
+                }
+        */
 
 
 
