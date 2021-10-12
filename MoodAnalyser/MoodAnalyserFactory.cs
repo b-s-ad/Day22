@@ -4,7 +4,7 @@ using System.Text;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-namespace MoodAnalyser        
+namespace MoodAnalyser        // 4.1 
 {
     public class MoodAnalyserFactory
     {

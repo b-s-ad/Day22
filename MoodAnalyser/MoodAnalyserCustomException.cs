@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace MoodAnalyser  
+namespace MoodAnalyser  // 4.1
 {
     public class MoodAnalyserCustomException : Exception
     {
