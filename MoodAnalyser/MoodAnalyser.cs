@@ -2,7 +2,8 @@
 using System.Text;
 using System.Collections.Generic;
 
-namespace MoodAnalyser   // 4.1{
+namespace MoodAnalyser   // 4.1
+{ 
     public class MoodAnalyser
     {
         private string message;
