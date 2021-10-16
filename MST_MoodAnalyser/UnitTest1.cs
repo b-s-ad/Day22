@@ -4,52 +4,131 @@ using MoodAnalyser;
 using System;
 
 
-namespace MoodAnalyser   // 5.3
+namespace MoodAnalyser   // 7.3
 {
 
-    [TestClass] 
-    public class UnitTest1   
+
+    [TestClass]  
+    public class UnitTest1
     {
 
-        [TestMethod]   //5.3 Given_Improper_Construtor_Should throw MoodAnalyseException   
-        public void Given_Improper_Construtor_Should_Throw_MoodAnalyserCustomException()
+        [TestMethod] //7.3
+    public void Given_NULL_Message_WithReflector_Should_Throw_Exception()
+    {
+        try
         {
+            string result = MoodAnalyserFactory.SetField(null, "message");
+                string result2 = MoodAnalyserReflector.SetField(null, "message");
+            }
+        catch (MoodAnalyserCustomException e)
+        {
+            Assert.AreEqual("Message should not be null", e.Message);
+        }
+    }
 
-            string expected = "Construtor is Not Found";
+
+
+
+        /*
+        [TestMethod]
+        public void Given_ImproperFieldName_Should_Throw_Exception_with_No_Such_Field()
+        {
+            string expected = "Field is not Found";
             try
             {
-
-
-                object MoodAnalyseOnObjectt = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser.MoodAnalyser", "DemoClass", "HAPPY"); //UNknow Class
+                string result = MoodAnalyserFactory.SetField("HAPPY", "DemoMessage");
+                string result2 = MoodAnalyserReflector.SetField("HAPPY", "DemoMessage");
             }
-
-            catch (MoodAnalyserCustomException exception)
+            catch (MoodAnalyserCustomException e)
             {
-                Assert.AreEqual(expected, exception.Message); //AreEqual
+                Assert.AreEqual(expected, e.Message);
             }
         }
+*/
+
+        /*
+                [TestMethod]
+                public void GivenHappyMessage_WithReflector_Should_ReturnHAPPY() //7.1
+                {
+                    string result = MoodAnalyserFactory.SetField("HAPPY", "message");
+                    string result2 = MoodAnalyserReflector.SetField("HAPPY", "message");
+                    Assert.AreEqual("HAPPY", result);
+                }
+        */
 
 
 
-        [TestMethod]   //5.3 Given_Improper_Construtor_Should throw MoodAnalyseException   //AreEqual
-        public void Given_Improper_Construtor_Should_Throw_MoodAnalyserCustomExceptions()
+        /*[TestMethod] //6.2
+        public void Given_ImproperMethodName_Should_Throw_MoodAnalysisException()
         {
-
-            string expected = "Construtor is Not Found";
+            string expected = "Method is Not Found";
             try
             {
-
-
-                object MoodAnalyseOnObjectt = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser.MoodAnalyser", "MoodAnalyser", "HAPPY"); //know Class
+                string mood = MoodAnalyserReflector.InvokeAnalyseMood("Happy", "DemoMethod");
+                string moodd = MoodAnalyserFactory.InvokeAnalyseMood("Happy", "DemoMethod");
             }
-
-            catch (MoodAnalyserCustomException exception)
+            catch (MoodAnalyserCustomException e)
             {
-                Assert.AreEqual(expected, exception.Message); //AreEqual
+                Assert.AreEqual(expected, e.Message);
             }
         }
+    */
 
 
+
+        /* [TestMethod] // 6.1
+
+         public void GivenHappyMoodShouldReturnHappy()
+         {
+             string expected = "HAPPY";
+             string mood = MoodAnalyserReflector.InvokeAnalyseMood("Happy","AnalyseMood");
+             string moodd = MoodAnalyserFactory.InvokeAnalyseMood("Happy", "AnalyseMood");
+             Assert.AreEqual(expected, mood);
+         }
+    */
+
+
+        /*
+
+                [TestMethod]   //5.3 Given_Improper_Construtor_Should throw MoodAnalyseException   
+                public void Given_Improper_Construtor_Should_Throw_MoodAnalyserCustomException()
+                {
+
+                    string expected = "Construtor is Not Found";
+                    try
+                    {
+
+
+                        object MoodAnalyseOnObjectt = MoodAnalyserReflector.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser.MoodAnalyser", "DemoClass", "HAPPY"); //UNknow Class
+                    }
+
+                    catch (MoodAnalyserCustomException exception)
+                    {
+                        Assert.AreEqual(expected, exception.Message); //AreEqual
+                    }
+                }
+
+
+
+                [TestMethod]   //5.3 Given_Improper_Construtor_Should throw MoodAnalyseException   //AreEqual
+                public void Given_Improper_Construtor_Should_Throw_MoodAnalyserCustomExceptions()
+                {
+
+                    string expected = "Construtor is Not Found";
+                    try
+                    {
+
+
+                        object MoodAnalyseOnObjectt = MoodAnalyserReflector.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser.MoodAnalyser", "MoodAnalyser", "HAPPY"); //know Class
+                    }
+
+                    catch (MoodAnalyserCustomException exception)
+                    {
+                        Assert.AreEqual(expected, exception.Message); //AreEqual
+                    }
+                }
+
+        */
         /*
                 [TestMethod]   //5.2 Given_Improper_ClassName_Should throw MoodAnalyseException   //AreEqual
                 public void Given_Improper_ClassName_Should_Throw_MoodAnalyserCustomException()
@@ -148,7 +227,7 @@ namespace MoodAnalyser   // 5.3
              }
          }
 
- */
+    */
 
 
 
